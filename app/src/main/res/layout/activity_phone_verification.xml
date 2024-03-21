@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".phone_verification"
+    android:orientation="vertical"
+    android:background="#FFECEF">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Verification Code"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="100dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please Enter Code We just Send to "
+        android:textColor="@color/black"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="959595xxxx"
+        android:textColor="@color/black"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_gravity="center"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="15dp"
+        >
+        <EditText
+            android:id="@+id/otp_digit_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/white_circle"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:ems="1"/>
+
+        <EditText
+            android:id="@+id/otp_digit_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/white_circle"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:ems="1"/>
+
+        <EditText
+            android:id="@+id/otp_digit_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/white_circle"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:ems="1"/>
+
+        <EditText
+            android:id="@+id/otp_digit_4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/white_circle"
+            android:textAlignment="center"
+            android:inputType="number"
+            android:maxLength="1"
+            android:ems="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Didnt Receive OTP?"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resend Code"
+        android:textColor="#FF5069"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        />
+
+    <Button
+        android:id="@+id/verify_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:padding="15dp"
+        android:text="Verify"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        />
+
+
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login_With_Phone"
+    android:background="#FFECEF">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/app_logo"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <TextView
+        android:id="@+id/text_lets"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lets start with your"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/img_logo"
+        android:gravity="center"
+        />
+    <TextView
+        android:id="@+id/text_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="number"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_centerVertical="true"
+        android:layout_below="@+id/text_lets"
+        android:gravity="center"
+        />
+
+    <EditText
+        android:id="@+id/phone_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/text_number"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/edit_text_view"
+        android:hint="Enter Phone Number"
+        android:padding="20dp" />
+
+    <Button
+        android:id="@+id/continue_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_bg"
+        android:layout_below="@+id/phone_et"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:padding="15dp"
+        android:text="Continue"
+        android:textColor="@color/white"
+        />
+
+    <TextView
+        android:id="@+id/or_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/continue_btn"
+        android:text="---------------------OR------------------"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_margin="15dp"
+        android:textStyle="bold"
+        />
+
+    <Button
+        android:id="@+id/facebbok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_view_white_bg"
+        android:text="Login With Facebook"
+        android:drawableStart="@drawable/facebook"
+        android:padding="20dp"
+        android:layout_below="@id/or_text"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn_view_white_bg"
+        android:text="Login With GOOGLE"
+        android:drawableStart="@drawable/google"
+        android:padding="20dp"
+        android:layout_below="@id/facebbok"
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dont Have An Account ?Sign Up"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20dp"
+        />
+
+
+
+</RelativeLayout>

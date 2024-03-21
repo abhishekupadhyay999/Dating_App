@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OnBoarding_Page"
+    android:background="#FFECEF">
+
+    <ImageView
+        android:id="@+id/img_logo"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/app_logo"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true"
+        />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/center_people"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img_logo">
+
+        <ImageView
+            android:id="@+id/imageViewMaskGroup"
+            android:layout_width="0dp"
+            android:layout_height="250dp"
+            android:layout_marginTop="4dp"
+            android:src="@drawable/mask_group"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/imageViewLogo2"
+            android:layout_width="100dp"
+            android:layout_height="119dp"
+            android:layout_marginTop="104dp"
+            android:src="@drawable/peron_logo_2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.35"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imageViewMaskGroup" />
+
+        <ImageView
+            android:id="@+id/imageViewLogo1"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:src="@drawable/peron_logo_1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.343"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imageViewMaskGroup" />
+
+        <ImageView
+            android:id="@+id/imageViewLogo3"
+            android:layout_width="123dp"
+            android:layout_height="123dp"
+            android:layout_marginTop="64dp"
+            android:src="@drawable/peron_logo_3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.694"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/imageViewMaskGroup" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <TextView
+    android:id="@+id/text_discover"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Discover Love Where Your Story Begins"
+    android:textSize="25dp"
+    android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+    android:textStyle="bold"
+    android:textAlignment="center"
+    android:layout_below="@id/center_people"
+    />
+
+    <TextView
+        android:id="@+id/text_subtext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:layout_marginRight="35dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="5dp"
+        android:text="Join us to discover your ideal partner and ignite the sparks of romance in your journey."
+        android:textAlignment="center"
+        android:layout_below="@id/text_discover"
+        />
+
+    <Button
+        android:id="@+id/login_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text_subtext"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/btn_view"
+        android:text="Login"
+        android:textColor="@color/white"
+        />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Dont Have an account? Sign Up"
+        android:layout_marginTop="20dp"
+        android:layout_below="@id/login_btn"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        />
+
+
+
+
+</RelativeLayout>
